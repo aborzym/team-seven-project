@@ -180,7 +180,6 @@ ul {
   display: flex;
   background-color: transparent;
   transition: fill 250ms $cubic-bezier;
-  will-change: fill;
   &:hover,
   &:focus {
     fill: $lgrey;
@@ -196,7 +195,5 @@ ul {
   }
 }
 .mobile-menu-button__icon {
-  color: $darkpink;
-  margin: auto;
   cursor: pointer;
 }
