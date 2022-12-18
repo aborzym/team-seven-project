@@ -1,14 +1,14 @@
 .products {
   padding-top: 121px;
-  padding-top: 98px;
-  max-width: 767px;
+  padding-bottom: 98px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: $tablet) {
-    max-width: 1199px;
+    padding-bottom: 112px;
   }
   @media screen and (min-width: $desktop) {
-    max-width: 1000px;
+    padding-top: 98px;
+    padding-bottom: 119px;
   }
 
   &__title {
@@ -62,12 +62,11 @@
     outline: none;
     box-shadow: none;
     cursor: pointer;
-    border-radius: 90%;
     background-color: transparent;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-top: 10px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $desktop) {
       margin-top: 32px;
     }
   }
@@ -110,7 +109,7 @@
   }
   &__list {
     display: grid;
-    grid-template-columns: 280px 1;
+    grid-template-columns: 1;
     gap: 17px;
     @media screen and (min-width: $tablet) {
       grid-template-columns: repeat(3, 1fr);
@@ -163,7 +162,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tablet) {
         width: 220px;
       }
       @media screen and (min-width: $desktop) {
@@ -181,7 +180,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tablet) {
         width: 220px;
       }
       @media screen and (min-width: $desktop) {
@@ -206,7 +205,6 @@
       @media screen and (min-width: $tablet) {
         margin-top: 50px;
         width: 220px;
-        height: 233px;
         height: 224px;
       }
       @media screen and (min-width: $desktop) {
