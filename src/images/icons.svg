@@ -48,5 +48,10 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M138.667 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
+<symbol id="icon-arrow" viewBox="0 0 22 32">
+<path fill="none" style="stroke: $darkpink" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.575 3.2l12.88 12.8-12.88 12.8"></path></symbol>
+<symbol id="icon-arrow2">
+      <path fill="none" d="m1.616 1 4.428 4-4.428 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
 </defs>
 </svg>
