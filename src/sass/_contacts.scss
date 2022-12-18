@@ -292,6 +292,7 @@ screen and (min-width: $desktop) and (min-resolution: 2dppx) {
     font-size: 16px;
     justify-content: center;
     align-items: center;
+    
 
     &:hover,
     &:focus {
@@ -342,10 +343,12 @@ screen and (min-width: $desktop) and (min-resolution: 2dppx) {
     font-size: 16px;
     justify-content: center;
     align-items: center;
+    
 
     &:hover,
     &:focus {
-        cursor: pointer;
         transition: fill 250ms $cubic-bezier;
+        cursor: pointer;
+        background-color: $greybtnhover;
     }
 }
