@@ -293,8 +293,10 @@ screen and (min-width: $desktop) and (min-resolution: 2dppx) {
     justify-content: center;
     align-items: center;
 
-    &:hover {
+    &:hover,
+    &:focus {
         cursor: pointer;
+        transition: fill 250ms $cubic-bezier;
     }
 
 
@@ -341,7 +343,9 @@ screen and (min-width: $desktop) and (min-resolution: 2dppx) {
     justify-content: center;
     align-items: center;
 
-    &:hover {
+    &:hover,
+    &:focus {
         cursor: pointer;
+        transition: fill 250ms $cubic-bezier;
     }
 }
