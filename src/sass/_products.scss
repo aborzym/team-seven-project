@@ -1,0 +1,230 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 98px;
+    padding-bottom: 119px;
+  }
+
+  &__title {
+    font-family: 'Titan one';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $darkpink;
+    margin-bottom: 31px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: 1.4;
+      letter-spacing: 0.06em;
+      margin-bottom: 100px;
+    }
+  }
+  &__upper--title {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    color: $pink;
+    margin-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+      line-height: 1.16;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__dots {
+    position: absolute;
+    width: 26px;
+    height: 6px;
+    left: 147px;
+    top: 1053px;
+  }
+  &__button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    background: transparent;
+    &--svg {
+      border-radius: 50%;
+      background-color: $white;
+      transition-property: color, background-color;
+      transition-timing-function: $cubic-bezier;
+      transition-duration: 200ms;
+      &:hover {
+        background-color: $darkpink;
+        --color11: white;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
+    }
+  }
+
+  &__description {
+    font-family: 'DM sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $white;
+    padding-left: 40px;
+    padding-right: 40px;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+  &__description-tablet {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: 'DM sans';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 152%;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: $white;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 176%;
+      text-align: center;
+      letter-spacing: 0.04em;
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 17px;
+    @media screen and (min-width: $tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media screen and (min-width: $tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    &--title {
+      font-family: 'Titan one';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: $white;
+      @media screen and (min-width: $desktop) {
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+      }
+    }
+    &--icecream {
+      background-color: $lightpink;
+      border-radius: 24px;
+      width: 280px;
+      height: 485px;
+      margin-top: 144px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @media screen and (min-width: $tablet) {
+        width: 220px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 330px;
+        height: 525px;
+      }
+    }
+    &--icecoffe {
+      background-color: $beige;
+      border-radius: 24px;
+      width: 280px;
+      height: 485px;
+      margin-top: 144px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @media screen and (min-width: $tablet) {
+        width: 220px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 330px;
+        height: 525px;
+      }
+    }
+    &--milkshakes {
+      background-color: $mint;
+      border-radius: 24px;
+      width: 280px;
+      height: 485px;
+      margin-top: 144px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @media screen and (min-width: $tablet) {
+        width: 220px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 330px;
+        height: 525px;
+      }
+    }
+    &--wrapper {
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      margin-top: -160px;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+    &--icemilk-photo,
+    &--icecream-photo,
+    &--icecoffe-photo {
+      width: 249px;
+      height: 252px;
+      @media screen and (min-width: $tablet) {
+        margin-top: 20px;
+        width: 220px;
+        height: 224px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-top: -70px;
+        width: 335px;
+        height: 335px;
+      }
+    }
+  }
+}

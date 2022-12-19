@@ -1,93 +1,142 @@
 <section class="products">
   <div class="container">
-    <ul class="products__list">
+    <h4 class="products__upper--title">100% NATURAL</h4>
+    <h2 class="products__title">PRODUCTS</h2>
+    <ul class="products__list list">
       <li class="products__list--icecream">
-        <picture>
-          <source
-            media="(min-width: 320px)"
+        <div class="products__list--wrapper">
+          <img
+            src="./images/products/d_icestrawberry@1x.png"
+            alt="strawberry ice cream"
+            class="products__list--icecream-photo"
             srcset="
-              ./images/products/m_icestrawberry@1x.png,
-              ./images/products/m_icestrawberry@2x.png
-            "
-            type="image/png"
-          />
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/products/d_icestrawberry@1x.png,
-              ./images/products/d_icestrawberry@2x.png
-            "
-            type="image/png"
+          ./images/products/m_icestrawberry@1x.png 249w,
+          ./images/products/m_icestrawberry@2x.png 2x 498w,
+          ./images/products/t_icestrawberry@1x.png 220w,
+          ./images/products/t_icestrawberry@2x.png 2x 440w,
+          ./images/products/d_icestrawberry@1x.png 335w,
+          ./images/products/d_icestrawberry@2x.png 2x 670w"
+            sizes="(min-width: 320px) 249px, (min-width: 768px) 220px, (min-width: 1200px) 670px, 100vw"
           />
 
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/products/t_icestrawberry@1x.png,
-              ./images/products/t_icestrawberry@2x.png
-            "
-            type="image/png"
-          />
-
-          <img src="./images/products/d_icestrawberry@1x.png" alt="strawberry ice cream" />
-        </picture>
-        <h2 class="products__title">ICE CREAM</h2>
-        <div class="products__dots">
-          <svg width="26" height="6">
-            <use href="./images/icons.svg#greydots" viewBox="0 0 35 32"></use>
-          </svg>
+          <h3 class="products__list--title">ICE CREAM</h3>
+          <div>
+            <svg width="26" height="6">
+              <use
+                href="./images/icons.svg#greydots"
+                viewBox="0 0 35 32"
+                class="products__dots"
+              ></use>
+            </svg>
+          </div>
+          <p class="products__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+          </p>
+          <p class="products__description-tablet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et.
+          </p>
+          <button type="button" class="products__button">
+            <svg class="products__button--svg" width="40" height="40">
+              <use
+                href="./images/icons.svg#icon-arrow-right-ikona"
+                viewBox="0 0 32 32"
+              ></use>
+            </svg>
+          </button>
         </div>
-        <p class="products__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et. dolore magna aliqua facilisis.
-        </p>
-        <button class="products__button" type="button">
-          <img src="./images/products/arrow-right.png" />
-        </button>
       </li>
       <li class="products__list--icecoffe">
-        <picture>
-          <source
-            media="(min-width: 320px)"
-            srcset="./images/products/m_icecoffe@1x.png, ./images/products/m_icecoffe@2x.png"
-            type="image/png"
-          />
-          <source
-            media="(min-width: 1200px)"
-            srcset="./images/products/d_icecoffe@1x.png, ./images/products/d_icecoffe@2x.png"
-            type="image/png"
-          />
-
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/products/t_icecoffe@1x.png, ./images/products/t_icecoffe@2x.png"
-            type="image/png"
+        <div class="products__list--wrapper">
+          <img
+            src="./images/products/d_icestrawberry@1x.png"
+            alt="ice coffe"
+            class="products__list--icecoffe-photo"
+            srcset="
+          ./images/products/m_icecoffe@1x.png 249w,
+          ./images/products/m_icecoffe@2x.png 2x 498w,
+          ./images/products/t_icecoffe@1x.png 220w,
+          ./images/products/t_icecoffe@2x.png 2x 440w,
+          ./images/products/d_icecoffe@1x.png 335w,
+          ./images/products/d_icecoffe@2x.png 2x 670w"
+            sizes="(min-width: 320px) 249px, (min-width: 768px) 220px, (min-width: 1200px) 670px, 100vw"
           />
 
-          <img src="./images/products/d_icecoffe@1x.png" alt="ice coffe" />
-        </picture>
+          <h3 class="products__list--title">ICE COFFE</h3>
+          <div>
+            <svg width="26" height="6">
+              <use
+                href="./images/icons.svg#greydots"
+                viewBox="0 0 35 32"
+                class="products__dots"
+              ></use>
+            </svg>
+          </div>
+          <p class="products__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+          </p>
+          <p class="products__description-tablet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et.
+          </p>
+          <button type="button" class="products__button">
+            <svg class="products__button--svg" width="40" height="40">
+              <use
+                href="./images/icons.svg#icon-arrow-right-ikona"
+                viewBox="0 0 32 32"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </li>
       <li class="products__list--milkshakes">
-        <picture>
-          <source
-            media="(min-width: 320px)"
-            srcset="./images/products/m_icemilk@1x.png, ./images/products/m_icemilk@2x.png"
-            type="image/png"
-          />
-          <source
-            media="(min-width: 1200px)"
-            srcset="./images/products/d_icemilk@1x.png, ./images/products/d_icemilk@2x.png"
-            type="image/png"
-          />
-
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/products/t_icemilk@1x.png, ./images/products/t_icemilk@2x.png"
-            type="image/png"
+        <div class="products__list--wrapper">
+          <img
+            sizes="(min-width: 320px) 249px, (min-width: 768px) 220px, (min-width: 1200px) 670px, 100vw"
+            src="./images/products/d_icemilk@1x.png"
+            alt="milkshake"
+            class="products__list--icemilk-photo"
+            srcset="
+          ./images/products/m_icemilk@1x.png 249w,
+          ./images/products/m_icemilk@2x.png 2x 498w,
+          ./images/products/t_icemilk@1x.png 220w,
+          ./images/products/t_icemilk@2x.png 2x 440w,
+          ./images/products/d_icemilk@1x.png 335w,
+          ./images/products/d_icemilk@2x.png 2x 670w"
           />
 
-          <img src="./images/products/d_icemilk@1x.png" alt="milkshake" />
-        </picture>
+          <h3 class="products__list--title">MILKSHAKES</h3>
+          <div>
+            <svg class="products__dots--color" width="26" height="6">
+              <use
+                href="./images/icons.svg#greydots"
+                viewBox="0 0 35 32"
+                class="products__dots"
+              ></use>
+            </svg>
+          </div>
+          <p class="products__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+          </p>
+          <p class="products__description-tablet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et.
+          </p>
+          <button type="button" class="products__button">
+            <svg class="products__button--svg" width="40" height="40">
+              <use
+                href="./images/icons.svg#icon-arrow-right-ikona"
+                viewBox="0 0 32 32"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </li>
     </ul>
   </div>
