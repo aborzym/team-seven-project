@@ -5,8 +5,7 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-.review__content
-{
+.review__content{
   font-size: 12px;
     font-weight: 500;
     line-height: 30.6px;
@@ -14,7 +13,6 @@ justify-content: center;
 font-size: 12px;
 font-weight: 500;
 line-height: 30.6px;
-text-align: center;
 height: 100%;
 width: 100%;
 background-color: $lgrey;
@@ -23,7 +21,7 @@ padding: 43px 57px 26px 66px;
 }
 .underline-gradient{
  
-  background-image: linear-gradient(transparent 14px, #E1E1E1 50%, #E1E1E1 100%);
+  background-image: linear-gradient(transparent 15px, #E1E1E1 20%, #E1E1E1 20%);
 }
 
 .card__item
