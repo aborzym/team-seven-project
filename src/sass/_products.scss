@@ -66,6 +66,9 @@
     &--svg {
       border-radius: 50%;
       background-color: $white;
+      transition-property: color, background-color;
+      transition-timing-function: $cubic-bezier;
+      transition-duration: 200ms;
       &:hover {
         background-color: $darkpink;
         --color11: white;
@@ -119,7 +122,7 @@
   }
   &__list {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     gap: 17px;
     @media screen and (min-width: $tablet) {
       grid-template-columns: repeat(3, 1fr);
