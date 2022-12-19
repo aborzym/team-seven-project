@@ -53,10 +53,7 @@
 <symbol id="icon-arrow2">
 <path fill="none" d="m1.616 1 4.428 4-4.428 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></path>
 </symbol>
-<symbol id="icon-close" viewBox="0 0 32 32">
-<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter"  d="M2.519 2l26.963 28"></path>
-<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter"  d="M2 29.481l28-26.963"></path>
-</symbol>
+>
       
 </defs>
 </svg>

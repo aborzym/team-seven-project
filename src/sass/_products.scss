@@ -236,7 +236,7 @@
   margin: auto;
   position: relative;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     width: 450px;
     height: 615px;
   }
@@ -252,26 +252,33 @@
 .modal__close-btn {
   width: 30px;
   height: 30px;
-  background-color: lightgrey;
+  background-color: transparent;
   border: 1px solid rgba(255, 255, 255);
   border-radius: 50%;
   cursor: pointer;
   right: 10px;
   top: 10px;
   position: absolute;
-
   &:hover {
-    background: $darkpink;
+    background: transparent;
     border-radius: 50%;
     box-shadow: none;
   }
 
   & svg {
     position: absolute;
-    left: 8;
-    top: 8;
+    left: 8px;
+    top: 8px;
+    fill: $darkpink;
+    background-color: transparent;
+    transition-property: fill;
+    transition-duration: 0.5s;
+    &:hover {
+      fill: $black;
+    }
   }
 }
+
 .backdrop {
   position: fixed;
   left: 0;
