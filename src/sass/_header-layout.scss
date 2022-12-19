@@ -1,0 +1,102 @@
+.header {
+  background-color: $lightpink;
+  height: 502px;
+  width: 100%;
+  position: relative;
+}
+
+.header__elipse {
+  width: 364px;
+  height: 364px;
+  background-color: $pink;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.header__ice {
+  background-image: url(../images/header/m_icecream@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/header/m_icecream@2x.png);
+  }
+  width: 171px;
+  height: 410px;
+  background-size: cover;
+  position: absolute;
+  margin-top: 92px;
+  margin-left: 100px;
+}
+
+// text// text// text// text// text// text// text
+
+.header__heading {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-family: $titan;
+  color: $white;
+  font-size: 26px;
+  margin-top: 190px;
+  left: 0;
+
+  margin-left: 20px;
+  @media screen and(min-width: $tablet) {
+    margin-left: 34px;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-left: 115px;
+  }
+}
+
+.header__passion {
+  color: $darkpink;
+  font-size: 48px;
+}
+
+// buttons// buttons// buttons// buttons// buttons// buttons
+
+.header__buttons {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  text-align: center;
+  font-size: 8px;
+  position: absolute;
+  margin-top: 318px;
+  margin-left: 20px;
+  @media screen and(min-width: $tablet) {
+    margin-left: 34px;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-left: 115px;
+  }
+}
+
+.header__buttons-products {
+  background-color: $darkpink;
+  color: $white;
+  width: 62px;
+  height: 24px;
+  border-radius: 30px;
+  border: none;
+}
+.header__buttons-products:hover,
+.header__buttons-products:focus {
+  background-color: $pinkbtnhover;
+}
+
+.header__buttons-about {
+  background-color: $white;
+  color: $darkpink;
+  width: 82px;
+  height: 24px;
+  border-radius: 30px;
+  border: none;
+}
+.header__buttons-about:hover,
+.header__buttons-about:focus {
+  background-color: $greybtnhover;
+}
