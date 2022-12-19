@@ -63,14 +63,23 @@
     box-shadow: none;
     cursor: pointer;
     background: transparent;
+    &--svg {
+      border-radius: 50%;
+      background-color: $white;
+      &:hover {
+        background-color: $darkpink;
+        --color11: white;
+      }
+    }
 
     @media screen and (min-width: $tablet) {
-      margin-top: 20px;
+      margin-top: 10px;
     }
     @media screen and (min-width: $desktop) {
       margin-top: 32px;
     }
   }
+
   &__description {
     font-family: 'DM sans';
     font-weight: 700;
