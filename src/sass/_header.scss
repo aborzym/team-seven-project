@@ -1,0 +1,199 @@
+.hero-header {
+  background: $lightpink;
+}
+.support {
+  display: flex;
+  flex-direction: row;
+  @media screen and (min-width: $tablet) {
+    justify-content: space-between;
+  }
+}
+
+.hero-header__logo {
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 37px;
+  }
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    padding: 50px 55px;
+    gap: 35px;
+  }
+}
+.nav__home {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__about-us {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__how-its-made {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__our-products {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__contacts {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    &:hover {
+      box-shadow: $shadow;
+      background-color: $greybtnhover;
+    }
+    display: flex;
+    background-color: $white;
+    border-radius: 22px;
+    box-shadow: none;
+    width: 159px;
+    height: 44px;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 250ms box-shadow $cubic-bezier,
+      250ms background-color $cubic-bezier, 250ms text-decoration $cubic-bezier;
+  }
+}
+.buy-now {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    color: $darkpink;
+    font-size: 16px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    cursor: pointer;
+  }
+}
+.buy-now__icon {
+  width: 4px;
+  height: 8px;
+  fill: $darkpink;
+  transition: fill 250ms $cubic-bezier;
+  &:hover {
+    fill: $white;
+  }
+}
+.buttons {
+  display: flex;
+  max-width: 100%;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 38px;
+  }
+}
+ul {
+  list-style: none;
+}
+.mobile-menu-button {
+  fill: $darkpink;
+  position: absolute;
+  width: 20px;
+  height: 12px;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  background-color: transparent;
+  transition: fill 250ms $cubic-bezier;
+  &:hover,
+  &:focus {
+    fill: $lgrey;
+  }
+  border: none;
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    top: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.mobile-menu-button__icon {
+  cursor: pointer;
+}
