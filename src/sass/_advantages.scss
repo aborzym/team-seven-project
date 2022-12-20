@@ -1,3 +1,4 @@
+
 .advantages {
   padding-bottom: 97px;
   background-color: $backgroundpink;
@@ -5,6 +6,7 @@
 }
 
 .advantages__item:first-child::before {
+
   content: '';
   display: block;
   width: 100%;
@@ -14,9 +16,9 @@
   background-repeat: no-repeat;
 }
 
+
 .advantages__item:not(:last-child) {
   margin-bottom: 38px;
-
   &::before {
     content: '';
     display: block;
@@ -74,7 +76,6 @@
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .advantages {
     padding-left: 36px;
@@ -107,11 +108,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+
   .advantages {
     padding-top: 39px;
     padding-bottom: 97px;
     background-color: $backgroundpink;
-
     .container {
       .advantages__list {
         display: flex;
