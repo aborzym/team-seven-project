@@ -1,10 +1,9 @@
 <section class="header">
   <div class="container">
-    <div class="header__elipse"></div>
-    <div class="header__ice"></div>
     <h1 class="header__heading">
-      ICE CREAM MADE WITH <span class="header__passion">PASSION</span>
+      ICE CREAM MADE WITH<span class="header__passion">PASSION</span>
     </h1>
+
     <ul class="header__buttons">
       <li>
         <a href="#"
@@ -21,5 +20,67 @@
         >
       </li>
     </ul>
+    <div class="header__ice"></div>
+    <div class="header__elipse"></div>
+    <!-- tablet desktop     --><!-- tablet desktop     --><!-- tablet desktop     --><!-- tablet desktop     -->
+
+    <div class="tablet">
+      <ul class="header__building">
+        <li class="header__numbers">16</li>
+        <li class="to">cafes</li>
+        <li class="header__numbers">23</li>
+        <li>food trucks</li>
+      </ul>
+      <ul>
+        <li class="header__buildings-elipse"></li>
+        <li class="header__buildings-elipse"></li>
+      </ul>
+      <img
+        class="header__lady"
+        src="./images/header/t_lady@1x.png"
+        srcset="
+          ./images/header/t_lady@1x.png,
+          ./images/header/t_lady@2x.png,
+          ./images/header/d_lady@1x.png,
+          ./images/header/d_lady@2x.png
+        "
+        sizes="(min-width:$tablet)168px"
+        alt="women eating icecream"
+      />
+      <ul class="header__milk">
+        <li>
+          <img
+            src="./images/header/t_milk@1x.png"
+            srcset="
+              ./images/header/t_milk@1x.png,
+              ./images/header/t_milk@2x.png,
+              ./images/header/d_milk@1x.png,
+              ./images/header/d_milk@2x.png
+            "
+            sizes="(min-width:$tablet)124px"
+            alt="milk with writing bio eco"
+          />
+        </li>
+        <li class="header__milk-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+        </li>
+        <li class="header__arrow">
+          <img
+            src="./images/header/t_arrow@1x.png"
+            srcset="
+              ./images/header/t_arrow@1x.png,
+              ./images/header/t_arrow@2x.png,
+              ./images/header/d_arrow@1x.png,
+              ./images/header/d_arrow@2x.png
+            "
+            sizes="(min-width:$tablet)18px"
+            alt="white button with pink arrow"
+          />
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
