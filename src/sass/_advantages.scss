@@ -1,0 +1,146 @@
+
+.advantages {
+  padding-bottom: 97px;
+  background-color: $backgroundpink;
+  padding-left: 20px;
+}
+
+.advantages__item:first-child::before {
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/advantages/milk.png);
+  background-repeat: no-repeat;
+}
+
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 38px;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    background-image: url(../images/advantages/fruit.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item:last-child::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/advantages/lolly.png);
+  background-repeat: no-repeat;
+}
+
+.advantages__title {
+  color: $darkpink;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.advantages__content {
+  color: $black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages {
+    .container {
+      .advantages__list {
+
+        .advantages__item {
+          display: block;
+          padding-bottom: 0;
+          margin-bottom: 0;
+
+          .advantages__content {
+            margin-bottom: 38px;
+          }
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-left: 36px;
+
+    .container {
+      .advantages__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: space-between;
+
+        .advantages__item {
+          margin-bottom: 0;
+          max-width: 180px;
+
+          &::before {
+            margin-bottom: 36px;
+          }
+
+          .advantages__content {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.04em;
+            margin-top: 13px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .advantages {
+    padding-top: 39px;
+    padding-bottom: 97px;
+    background-color: $backgroundpink;
+    .container {
+      .advantages__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+
+        .advantages__item {
+          width: 330px;
+          margin-bottom: 0;
+
+          &::before {
+            margin-bottom: 40px;
+          }
+
+          .advantages__content {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.04em;
+            margin-top: 13px;
+          }
+        }
+      }
+    }
+  }
+}
