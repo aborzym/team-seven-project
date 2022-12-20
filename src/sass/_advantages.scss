@@ -66,11 +66,15 @@
     .container {
       .advantages__list {
 
-        .advantages__item:not(:first-child) {
+        .advantages__item {
           display: block;
           padding-bottom: 0;
           margin-bottom: 0;
-          margin-top: 38px;
+
+          .advantages__content {
+            margin-bottom: 38px;
+          }
+
         }
       }
     }
@@ -85,6 +89,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
+        justify-content: space-between;
 
         .advantages__item {
           margin-bottom: 0;
@@ -118,6 +123,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+        justify-content: space-between;
 
         .advantages__item {
           width: 330px;
