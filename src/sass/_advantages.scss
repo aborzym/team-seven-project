@@ -16,12 +16,8 @@
 
 .advantages__item:not(:last-child) {
   margin-bottom: 38px;
-<<<<<<< Updated upstream
 
   &::before {
-=======
-    &::before {
->>>>>>> Stashed changes
     content: '';
     display: block;
     width: 100%;
@@ -29,11 +25,7 @@
     margin-bottom: 16px;
     background-image: url(../images/advantages/fruit.png);
     background-repeat: no-repeat;
-<<<<<<< Updated upstream
   }
-=======
-    }
->>>>>>> Stashed changes
 }
 
 .advantages__item:last-child::before {
@@ -72,48 +64,32 @@
     .container {
       .advantages__list {
 
-<<<<<<< Updated upstream
-        .advantages__item:not(:first-child) {
-          display: block;
-          padding-bottom: 0;
-          margin-bottom: 0;
-          margin-top: 38px;
-=======
         .advantages__item {
           display: block;
           padding-bottom: 0;
           margin-bottom: 0;
+
           .advantages__content {
             margin-bottom: 38px;
           }
-        
->>>>>>> Stashed changes
+
         }
       }
     }
   }
 }
-<<<<<<< Updated upstream
 
 @media screen and (min-width: 768px) {
   .advantages {
     padding-left: 36px;
 
-=======
-@media screen and (min-width: 768px) {
-  .advantages {
-    padding-left: 36px;
->>>>>>> Stashed changes
     .container {
       .advantages__list {
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
-<<<<<<< Updated upstream
-
-=======
         justify-content: space-between;
->>>>>>> Stashed changes
+
         .advantages__item {
           margin-bottom: 0;
           max-width: 180px;
@@ -121,21 +97,14 @@
           &::before {
             margin-bottom: 36px;
           }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
           .advantages__content {
             font-size: 14px;
             line-height: 1.71;
             letter-spacing: 0.04em;
             margin-top: 13px;
           }
-<<<<<<< Updated upstream
 
-=======
-  
->>>>>>> Stashed changes
         }
       }
     }
@@ -147,30 +116,22 @@
     padding-top: 39px;
     padding-bottom: 97px;
     background-color: $backgroundpink;
+
     .container {
       .advantages__list {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-<<<<<<< Updated upstream
-
-        .advantages__item {
-          width: 330px;
-          margin-bottom: 0;
-
-          &::before {
-            margin-bottom: 40px;
-          }
-
-=======
         justify-content: space-between;
+
         .advantages__item {
           width: 330px;
           margin-bottom: 0;
+
           &::before {
             margin-bottom: 40px;
           }
->>>>>>> Stashed changes
+
           .advantages__content {
             font-size: 14px;
             line-height: 1.71;
