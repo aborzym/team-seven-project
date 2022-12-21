@@ -228,13 +228,25 @@
     }
   }
 }
+// MODAL
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   width: 310px;
   height: 640px;
-  background-color: #fff;
+  background-color: $modalpink;
   margin: auto;
-  position: relative;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  border-radius: 24px;
+  box-shadow: inset $shadow;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition-duration: 250ms;
+
+  z-index: 999;
 
   @media screen and (min-width: 768px) {
     width: 450px;
@@ -247,6 +259,12 @@
     width: 528px;
     height: 581px;
   }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal__close-btn {
@@ -262,7 +280,6 @@
   &:hover {
     background: transparent;
     border-radius: 50%;
-    box-shadow: none;
   }
 
   & svg {
@@ -272,30 +289,25 @@
     fill: $darkpink;
     background-color: transparent;
     transition-property: fill;
-    transition-duration: 0.5s;
+    transition-duration: 250ms;
     &:hover {
       fill: $black;
     }
   }
 }
 
-.backdrop {
+.overlay {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(212, 20, 67, 0.1);
-  display: flex;
+  z-index: 990;
   transition-property: opacity, visibility, transform;
   transition-duration: 0.5s;
-  z-index: 999;
-}
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateX(-100%);
 }
 
 .modal-container {
