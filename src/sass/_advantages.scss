@@ -5,8 +5,9 @@
   padding-left: 20px;
 }
 
-.advantages__item:first-child::before {
 
+.advantages__item:first-child {
+  &::before {
   content: '';
   display: block;
   width: 100%;
@@ -14,10 +15,10 @@
   margin-bottom: 16px;
   background-image: url(../images/advantages/milk.png);
   background-repeat: no-repeat;
+  }
 }
 
-
-.advantages__item:not(:last-child) {
+.advantages__item {
   margin-bottom: 38px;
   &::before {
     content: '';
@@ -30,7 +31,9 @@
   }
 }
 
-.advantages__item:last-child::before {
+.advantages__item:last-child {
+  margin-bottom: 0;
+  &::before {
   content: '';
   display: block;
   width: 100%;
@@ -38,8 +41,8 @@
   margin-bottom: 16px;
   background-image: url(../images/advantages/lolly.png);
   background-repeat: no-repeat;
+  }
 }
-
 .advantages__title {
   color: $darkpink;
   font-family: 'Titan One';
@@ -126,9 +129,8 @@
         justify-content: space-between;
 
         .advantages__item {
-          width: 330px;
           margin-bottom: 0;
-
+          max-width: 330px;
           &::before {
             margin-bottom: 40px;
           }
