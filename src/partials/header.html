@@ -1,0 +1,44 @@
+<section class="hero-header">
+  <div class="container support">
+    <div class="hero-header__logo">
+      <picture>
+        <source
+          media="(min-width:320px)"
+          srcset="
+            ./images/header/logo1-s@1x.png 1x,
+            ./images/header/logo1-s@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img src="./images/header/logo1.png" alt="Logo ice cream z nazwą" />
+      </picture>
+    </div>
+    <div class="nav">
+      <ul class="nav__list">
+        <li><a class="nav__home" href="#">Home</a></li>
+        <li><a class="nav__about-us" href="#about">About us</a></li>
+        <li><a class="nav__how-its-made" href="#about">How it's made?</a></li>
+        <li><a class="nav__our-products" href="#products">Our products</a></li>
+        <li><a class="nav__contacts" href="#contacts">Contacts</a></li>
+      </ul>
+    </div>
+    <div class="buttons">
+      <div class="button">
+        <button class="buy-now" type="button">Buy now</button>
+        <svg class="buy-now__icon" width="4px" height="8px">
+          <use href="./images/icons.svg#icon-arrow1"></use>
+        </svg>
+      </div>
+
+      <button
+        class="mobile-menu-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile-menu-button__icon" width="20px" height="20px">
+          <use href="./images/icons.svg#icon-Burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

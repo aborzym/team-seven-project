@@ -1,8 +1,10 @@
+
 .advantages {
   padding-bottom: 97px;
   background-color: $backgroundpink;
   padding-left: 20px;
 }
+
 
 .advantages__item:first-child {
   &::before {
@@ -18,7 +20,6 @@
 
 .advantages__item {
   margin-bottom: 38px;
-
   &::before {
     content: '';
     display: block;
@@ -82,7 +83,6 @@
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .advantages {
     padding-left: 36px;
@@ -121,7 +121,6 @@
     padding-top: 39px;
     padding-bottom: 97px;
     background-color: $backgroundpink;
-
     .container {
       .advantages__list {
         display: flex;

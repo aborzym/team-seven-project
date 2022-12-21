@@ -1,0 +1,14 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    $backgroundpink 19.56%,
+    $white 80.44%
+  );
+  background-position: center;
+  width: 100%;
+  margin: auto;
+
+  &__image {
+    width: 100%;
+  }
+}
