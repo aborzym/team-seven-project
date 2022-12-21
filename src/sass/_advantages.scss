@@ -17,13 +17,13 @@
 }
 .advantages__item:first-child {
   &::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 16px;
-  background-image: url(../images/advantages/milk.png);
-  background-repeat: no-repeat;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    background-image: url(../images/advantages/milk.png);
+    background-repeat: no-repeat;
   }
 }
 
@@ -44,13 +44,13 @@
 .advantages__item:last-child {
   margin-bottom: 0;
   &::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 16px;
-  background-image: url(../images/advantages/lolly.png);
-  background-repeat: no-repeat;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    background-image: url(../images/advantages/lolly.png);
+    background-repeat: no-repeat;
   }
 }
 .advantages__title {
@@ -78,7 +78,6 @@
   .advantages {
     .container {
       .advantages__list {
-
         .advantages__item {
           display: block;
           padding-bottom: 0;
@@ -87,7 +86,6 @@
           .advantages__content {
             margin-bottom: 38px;
           }
-
         }
       }
     }
@@ -119,7 +117,6 @@
             letter-spacing: 0.04em;
             margin-top: 13px;
           }
-
         }
       }
     }
@@ -127,7 +124,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-
   .advantages {
     padding-top: 39px;
     padding-bottom: 97px;

@@ -1,0 +1,354 @@
+.contacts {
+    background-image: linear-gradient($white 5%, $backgroundpink 5%);
+    padding-bottom: 113px;
+
+    @media screen and (min-width: $tablet) {
+        background-image: linear-gradient($white 9%, $backgroundpink 9%);
+        padding-bottom: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        background-image: linear-gradient($white 12%, $backgroundpink 12%);
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+        z-index: 1;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            display: flex;
+        }
+
+    }
+
+
+    &__button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 54px;
+
+        @media screen and (min-width: $tablet) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-top: 85px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) and (min-device-pixel-ratio:2),
+screen and (min-width: $desktop) and (min-resolution: 192dpi),
+screen and (min-width: $desktop) and (min-resolution: 2dppx) { 
+    .contacts {
+        background-color: $black;
+        background-image: url('../images/gallery/spots_left.png'), url('../images/gallery/spots_right.png'), linear-gradient($white 12%, $backgroundpink 12%);
+        background-position: 0 180px, right top 300px, 0 0;
+        background-repeat: no-repeat;
+        background-size: 56px, 56px, 100%;
+        background-attachment: scroll, scroll, scroll;
+        background-origin: padding-box, padding-box, padding-box;
+        background-clip: border-box, border-box, border-box;
+}
+}
+
+
+
+
+@media screen and (min-width:$tablet) {
+    .contacts-card:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .contacts-card:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.contacts-card {
+    background-color: $white;
+    width: 220px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    padding: 43px 20px;
+    box-shadow: $shadow;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 220px;
+        flex-basis: calc(33.3333% - 13.3333px);
+        margin-bottom: 0;
+        padding: 50px 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 330px;
+        flex-basis: calc(33.3333% - 20px);
+        margin-bottom: 0;
+        padding: 55px 43px;
+    }
+
+    &__name {
+        background-color: $beige;
+        width: 80px;
+        border-radius: 4px;
+        margin-bottom: 25px;
+        color: $white;
+        text-align: center;
+        letter-spacing: .04em;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.83;
+
+        @media screen and (min-width: $tablet) {
+            width: 73px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.86;
+        }
+    }
+
+    &__name--color {
+        background-color: $mint;
+        width: 130px;
+    }
+
+    &__title {
+        color: $black;
+        margin-bottom: 10px;
+        letter-spacing: .04em;
+        line-height: 1.83;
+        font-weight: 500;
+        font-size: 12px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 14px;
+            font-size: 14px;
+            line-height: 1.86;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.86;
+        }
+    }
+
+    &__map {
+        color: $textgrey;
+        line-height: 1.5;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 14px;
+            line-height: 1.64;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 16px;
+            line-height: 1.86;
+        }
+    }
+}
+
+
+.contacts-element::before {
+    display: inline-block;
+    content: "";
+    border: 1px solid $footerborder;
+    width: 179px;
+    height: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: $tablet) {
+        width: 157px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 234px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.contacts-element::after {
+    display: inline-block;
+    content: "";
+    border: 1px solid $footerborder;
+    width: 179px;
+    height: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: $tablet) {
+        width: 157px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 234px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.contacts-element__part {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 15px;
+    }
+
+    &:nth-of-type(2) {
+        margin-bottom: 0;
+    }
+}
+
+.contacts__date {
+    color: $black;
+    letter-spacing: .04em;
+    line-height: 1.83;
+    font-weight: 500;
+    font-size: 12px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.86;
+    }
+}
+
+.contacts__time {
+    color: $pink;
+    line-height: 1.83;
+    font-size: 12px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.86;
+    }
+}
+
+
+.contacts__tel,
+.contacts__mail {
+    color: $textgrey;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.81;
+    }
+}
+
+.button-accent {
+    display: flex;
+    background-color: $darkpink;
+    color: $white;
+    text-align: center;
+    border: 0;
+    border-radius: 22px;
+    height: 44px;
+    margin: 0 auto;
+    padding: 0 37px;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        transition: fill 250ms $cubic-bezier;
+    }
+
+
+    &--position {
+        margin-bottom: 10px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+    }
+}
+
+
+
+.button__icon {
+    display: inline-flex;
+    stroke: currentColor;
+
+
+    &--position {
+        width: 8px;
+        height: 10px;
+        margin-left: 12px;
+    }
+}
+
+.button-frncs {
+    background-color: $white;
+    color: $darkpink;
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-timing-function: $cubic-bezier;
+    display: flex;
+    text-align: center;
+    border: 0;
+    border-radius: 22px;
+    height: 44px;
+    margin: 0 auto;
+    padding: 0 37px;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    
+
+    &:hover,
+    &:focus {
+        transition: fill 250ms $cubic-bezier;
+        cursor: pointer;
+        background-color: $greybtnhover;
+    }
+}
