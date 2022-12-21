@@ -82,8 +82,10 @@ font-weight: 500;
 }
 .swiper-pagination-bullet-active 
 {
+   background: url(../images/icons.svg#house) !important;
    background-color: $buttonhome;
   } 
+
   
   @media screen and (min-width: 768px)
   {
