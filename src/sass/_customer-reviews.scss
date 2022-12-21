@@ -24,7 +24,13 @@ background-color: $lgrey;
   
   }
 
-  
+  .svg::after{
+    content: url('../images/suspointspnk.svg');
+      padding-left: 120px;
+      padding-top: 20px;
+    
+      position: absolute;
+  }
 .text{
   position: relative;
 font-size: 12px;
@@ -82,7 +88,7 @@ margin: 43px 66px 26px 57px;
         
 }
 .review__customer-orgin
-{padding-top: 18px;
+{padding-top: 52px;
 font-weight: 500;
     font-size: 14px;
     line-height: 186%;
