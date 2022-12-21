@@ -18,18 +18,18 @@
   background-color: $pink;
   border-radius: 50%;
   margin-left: 26px;
-  margin-top: 80px;
+  margin-top: 30px;
   @media screen and(min-width: $tablet) {
     margin-left: 270px;
-    margin-top: 30px;
+    margin-top: -70px;
     width: 324px;
     height: 324px;
   }
   @media screen and(min-width: $desktop) {
     width: 538px;
     height: 538px;
-    margin-top: 50px;
-    margin-left: 250px;
+    margin-top: -70px;
+    margin-left: 390px;
   }
 }
 
@@ -54,7 +54,7 @@
     height: 336px;
   }
   @media screen and(min-width: $desktop) {
-    margin-left: 360px;
+    margin-left: 514px;
     bottom: 0;
     width: 236px;
     height: 557px;
@@ -69,27 +69,36 @@
 .header__lady {
   position: absolute;
   bottom: 0;
-
   right: 0;
   margin-right: 34px;
+  @media screen and(min-width: $desktop) {
+    width: 293px;
+  }
 }
 
 .header__milk {
   width: 128px;
-  display: flex;
-  flex-direction: row;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-left: 34px;
-  padding-bottom: 28px;
-  box-sizing: border-box;
+  margin-left: 34px;
+  margin-bottom: 28px;
+  @media screen and(min-width:$desktop) {
+    width: 188px;
+    margin-left: 77px;
+    margin-bottom: 45px;
+  }
 }
 
 .header__arrow {
-  display: flex;
-  align-items: flex-end;
+  margin-left: 120px;
+  @media screen and(min-width:$desktop) {
+    width: 24px;
+    height: 24px;
+    margin-left: 190px;
+  }
 }
+
 // text// text// text// text// text// text// text
 
 .header__heading {
@@ -98,19 +107,21 @@
   font-family: $titan;
   color: $white;
   font-size: 26px;
-  margin-top: 120px;
+  margin-top: 130px;
   max-width: 160px;
   z-index: 2;
   position: absolute;
+  font-weight: 400;
+  line-height: 1.25;
   @media screen and(min-width: $tablet) {
-    margin-top: 60px;
+    margin-top: 10px;
     font-size: 22px;
   }
   @media screen and(min-width: $desktop) {
     font-size: 38px;
     max-width: 280px;
-    margin-top: 170px;
-    margin-left: 40px;
+    margin-top: 50px;
+    margin-left: 70px;
   }
 }
 
@@ -129,22 +140,34 @@
 }
 
 .header__building {
-  display: flex;
-  flex-direction: column;
   font-size: 8px;
   color: $white;
-  align-items: flex-end;
-  padding-right: 88px;
-  padding-top: 96px;
+  position: absolute;
   gap: 20px;
+  top: 0;
+  right: 0;
+  margin-top: 94px;
+  margin-right: 34px;
+  @media screen and(min-width: $desktop) {
+    font-size: 14px;
+    margin-top: 156px;
+    margin-right: 50px;
+  }
 }
 
 .header__numbers {
   font-size: 28px;
   font-family: $titan;
   color: $darkpink;
-  display: flex;
-  margin-bottom: -20px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  @media screen and(min-width: $desktop) {
+    font-size: 46px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-right: 20px;
+  }
 }
 
 .header__buildings-elipse {
@@ -153,15 +176,39 @@
   background-color: $white;
   border-radius: 50%;
   border: none;
-  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and(min-width: $desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.header__cafes {
+  margin-bottom: 18px;
+  margin-left: -10px;
+}
+
+.header__food {
+  margin-left: -45px;
 }
 
 .header__milk-text {
   font-size: 8px;
   color: $white;
-  display: flex;
-  align-items: flex-end;
-  width: 10px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-left: 120px;
+  width: 114px;
+  margin-top: -60px;
+  margin-bottom: 7px;
+  @media screen and(min-width:$desktop) {
+    font-size: 14px;
+    width: 200px;
+    margin-left: 190px;
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
 }
 // buttons// buttons// buttons// buttons// buttons// buttons
 
@@ -172,15 +219,15 @@
   gap: 8px;
   text-align: center;
   font-size: 8px;
-  margin-top: 240px;
+  margin-top: 260px;
   z-index: 2;
   @media screen and(min-width: $tablet) {
-    margin-top: 170px;
+    margin-top: 120px;
   }
   @media screen and(min-width: $desktop) {
-    margin-left: 40px;
+    margin-left: 70px;
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 230px;
   }
 }
 
@@ -216,4 +263,206 @@
 .header__buttons-about:hover,
 .header__buttons-about:focus {
   background-color: $greybtnhover;
+}
+
+// header damian// header damian// header damian// header damian// header damian// header damian// header damian
+
+.hero-header {
+  background: $lightpink;
+}
+.support {
+  display: flex;
+  flex-direction: row;
+  @media screen and (min-width: $tablet) {
+    justify-content: space-between;
+  }
+}
+
+.hero-header__logo {
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 37px;
+  }
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    padding: 50px 55px;
+    gap: 35px;
+  }
+}
+.nav__home {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__about-us {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__how-its-made {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__our-products {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__contacts {
+  &:hover {
+    color: $darkpink;
+  }
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $white;
+  cursor: pointer;
+  transition: color 250ms $cubic-bezier;
+}
+.nav__list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    &:hover {
+      box-shadow: $shadow;
+      background-color: $greybtnhover;
+    }
+    display: flex;
+    background-color: $white;
+    border-radius: 22px;
+    box-shadow: none;
+    width: 159px;
+    height: 44px;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 250ms box-shadow $cubic-bezier,
+      250ms background-color $cubic-bezier, 250ms text-decoration $cubic-bezier;
+  }
+}
+.buy-now {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    color: $darkpink;
+    font-size: 16px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    cursor: pointer;
+  }
+}
+.buy-now__icon {
+  width: 4px;
+  height: 8px;
+  fill: $darkpink;
+  transition: fill 250ms $cubic-bezier;
+  &:hover {
+    fill: $white;
+  }
+}
+.buttons {
+  display: flex;
+  max-width: 100%;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 38px;
+  }
+}
+ul {
+  list-style: none;
+}
+.mobile-menu-button {
+  fill: $darkpink;
+  position: absolute;
+  width: 20px;
+  height: 12px;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  background-color: transparent;
+  transition: fill 250ms $cubic-bezier;
+  &:hover,
+  &:focus {
+    fill: $lgrey;
+  }
+  border: none;
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    top: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.mobile-menu-button__icon {
+  cursor: pointer;
 }
