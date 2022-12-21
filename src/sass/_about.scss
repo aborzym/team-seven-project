@@ -2,7 +2,7 @@
   padding-top: 125px;
   padding-bottom: 39px;
   background-color: $backgroundpink;
-  background-image: url(/images/about/m_cowmilk@1x.png);
+  background-image: url(../images/about/m_cowmilk@1x.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 80%;
@@ -10,7 +10,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/images/about/m_cowmilk@2x.png);
+    background-image: url(../images/about/m_cowmilk@2x.png);
   }
 
   @media screen and (min-width: $tablet) {
@@ -21,14 +21,14 @@
   @media screen and (min-width: $desktop) {
     padding-top: 125px;
     padding-bottom: 39px;
-    background-image: url(/images/about/d_cowmilk@1x.png);
+    background-image: url(../images/about/d_cowmilk@1x.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 120%;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/images/about/d_cowmilk@2x.png);
+      background-image: url(../images/about/d_cowmilk@2x.png);
     }
   }
 }
@@ -51,38 +51,38 @@
   margin-bottom: 46px;
   width: 280px;
   height: 279px;
-  background-image: url(/images/about/m_cow@1x.png);
+  background-image: url(../images/about/m_cow@1x.png);
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/images/about/m_cow@2x.png);
+    background-image: url(../images/about/m_cow@2x.png);
   }
 
   @media screen and (min-width: $tablet) {
     min-width: 340px;
     height: 339px;
     margin: 0;
-    background-image: url(/images/about/t_cow@1x.png);
+    background-image: url(../images/about/t_cow@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/images/about/t_cow@2x.png);
+      background-image: url(../images/about/t_cow@2x.png);
     }
   }
   @media screen and (min-width: $desktop) {
     min-width: 516px;
     height: 516px;
     margin: 0;
-    background-image: url(/images/about/d_cow@1x.png);
+    background-image: url(../images/about/d_cow@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/images/about/d_cow@2x.png);
+      background-image: url(../images/about/d_cow@2x.png);
     }
   }
 }
@@ -177,11 +177,11 @@ h3 {
   transition-timing-function: $cubic-bezier;
   display: flex;
   gap: 13.62px;
+  margin: 0;
   border: 0;
   border-radius: 22px;
   height: 44px;
   width: 176px;
-  margin: 0;
   line-height: 1.3;
   font-weight: 700;
   font-size: 16px;
