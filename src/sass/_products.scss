@@ -128,7 +128,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
     }
