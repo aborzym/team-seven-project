@@ -33,9 +33,9 @@ z-index: 0;
     }
       
       @media screen and (min-width: 1199px) {
-          padding: 17px 0 17px 0;
-            margin-left: 190px;
-            margin-right: 190px;
+          padding: 17px 0 30px 0;
+            margin-left: 100px;
+            margin-right: 100px;
             background-color: $lgrey;
         }
      
@@ -47,13 +47,13 @@ z-index: 0;
           background-size: 40px 54px;
          position: absolute;
          padding-top: 3px;
-         padding-left: 0;
+         padding-right: 10px;
         @media screen and (min-width: 768px) {
       padding-left: 46px;
           }
      @media screen and (min-width: 1199px) {
        padding-top: 0;
-              padding-left: 38px;
+              padding-left: 35px;
       
      }
   
@@ -61,21 +61,20 @@ z-index: 0;
 
   .svg::after{
     content: url('../images/suspointspnk.svg');
-      padding-left: 65px;
+      padding-left: 57px;
       padding-top: 45px;
       position: absolute;
       @media screen and (min-width: 768px) {
-        padding-left: 255px;
+        padding-left: 245px;
           padding-top: 45px;
         }
                 @media screen and (min-width: 1199px) {
-                  padding-left: 318px;
+                  padding-left: 400px;
                   padding-top: 45px;
                 }
   }
 .text{
-  position: relative;
-  
+position: relative;
 font-size: 12px;
     font-weight: 500;
     line-height: 30.6px;
@@ -83,14 +82,19 @@ font-size: 12px;
 font-size: 12px;
 font-weight: 500;
 line-height: 30.6px;
-margin: 18px 20px auto 20px;
+margin: 18px 0 auto 0;
 background-image:linear-gradient(to bottom, transparent 98%, #E1E1E1 2%);
 background-size: 100% 30px;
+
 @media screen and (min-width: 768px) {
-margin: 20px 80px auto 80px;
+margin: 20px 80px auto 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 216%;
 }
-@media screen and (min-width: 1999px) {
-  font-family: 'DM Sans';
+@media screen and (min-width: 1199px) {
+  
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -106,24 +110,32 @@ margin: 20px 80px auto 80px;
 
 .review__customer-avatar
 {
+  display: flex;
     padding-bottom: 29px;
     padding-top: 80px;
 }
 
 .review__customer-orgin
 {
-  margin-top: 47px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  
 font-weight: 500;
     font-size: 14px;
     line-height: 186%;
-    margin-right: 5px;
+  
+
 }
 
-.navigation-swipper
+.swiper-pagination
 {
-    display: flex;
-  padding-bottom: 57px;
+ position: relative;
+ padding-right: 20px;
+ padding-top: 40px;
 }
+
 .swiper-pagination-bullet-active 
 {
    background-image: url('../images/home.svg') !important;
