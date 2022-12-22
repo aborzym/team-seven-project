@@ -1,0 +1,35 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 310px;
+  height: 640px;
+  background-color: $modalpink;
+  margin: auto;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  border-radius: 24px;
+  box-shadow: inset $shadow;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition-duration: 250ms;
+
+  z-index: 999;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 615px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.iframe {
+  display: flex;
+  padding-left: 85px;
+}

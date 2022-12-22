@@ -95,7 +95,11 @@
     </ul>
     <ul class="contacts__button">
       <li>
-        <button class="button-accent button-accent--position" type="button">
+        <button
+          class="button-accent button-accent--position js-open-modal"
+          type="button"
+          data-modal="6"
+        >
           Our locations
           <svg class="button__icon button__icon--position">
             <use href="./images/icons.svg#icon-arrow2"></use>
@@ -103,7 +107,7 @@
         </button>
       </li>
       <li>
-        <button class="button-frncs" type="button">
+        <button class="button-frncs js-open-modal" type="button" data-modal="7">
           Franchise
           <svg class="button__icon button__icon--position">
             <use href="./images/icons.svg#icon-arrow2"></use>
@@ -112,4 +116,55 @@
       </li>
     </ul>
   </div>
+  <div class="modal" data-modal="6">
+    <button type="button" class="modal__close-btn js-modal-close">
+      <svg class="js-modal-close" viewBox="0 0 23 32">
+        <use
+          href="./images/icons.svg#icon-close_24px"
+          width="14"
+          height="14"
+        ></use>
+      </svg>
+    </button>
+    <div class="modal-container-scnd">
+      <h3 class="modal-title-scnd">MAIN SHOP</h3>
+      <p class="modal-description">1319 S Alvarado St, Los Angeles, CA 90006</p>
+      <iframe
+        class="iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8823511080823!2d-118.2860009883629!3d34.046888873046946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c79095f4db9b%3A0x571053997dfe4577!2s1319%20S%20Alvarado%20St%2C%20Los%20Angeles%2C%20CA%2090006%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1671729063652!5m2!1spl!2spl"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+  <div class="modal" data-modal="7">
+    <button type="button" class="modal__close-btn js-modal-close">
+      <svg class="js-modal-close" viewBox="0 0 23 32">
+        <use
+          href="./images/icons.svg#icon-close_24px"
+          width="14"
+          height="14"
+        ></use>
+      </svg>
+    </button>
+    <div class="modal-container-scnd">
+      <h3 class="modal-title-scnd">ICECREM HQ</h3>
+      <p class="modal-description">4536 W Gladys Ave, Chicago, IL 60624</p>
+      <iframe
+        class="iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.769759602925!2d-87.74145348802905!3d41.87629987112195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e331fa18ec035%3A0xecee2a802ac91907!2s4536%20W%20Gladys%20Ave%2C%20Chicago%2C%20IL%2060624%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1671728419463!5m2!1spl!2spl"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
 </section>
