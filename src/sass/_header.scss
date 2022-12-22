@@ -1,3 +1,7 @@
+.container {
+  position: relative;
+}
+
 .header {
   background-color: $lightpink;
   height: 502px;
@@ -49,13 +53,13 @@
 
   @media screen and(min-width: $tablet) {
     margin-left: 344px;
-    bottom: 0;
+    bottom: -33px;
     width: 140px;
     height: 336px;
   }
   @media screen and(min-width: $desktop) {
     margin-left: 514px;
-    bottom: 0;
+    bottom: -45px;
     width: 236px;
     height: 557px;
   }
@@ -72,10 +76,13 @@
   right: 0;
   margin-right: 109px;
   @media screen and(min-width: $tablet) {
-    margin-right: 34px;
+    margin-right: 0px;
+    bottom: -35px;
   }
   @media screen and(min-width: $desktop) {
     width: 293px;
+    margin-right: 0;
+    bottom: -45px;
   }
 }
 
@@ -85,13 +92,13 @@
   left: 0;
   @media screen and(min-width:$tablet) {
     width: 128px;
-    margin-left: 34px;
-    margin-bottom: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
   @media screen and(min-width:$desktop) {
     width: 188px;
-    margin-left: 77px;
-    margin-bottom: 45px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -159,7 +166,7 @@
   @media screen and(min-width: $desktop) {
     font-size: 14px;
     margin-top: 156px;
-    margin-right: 50px;
+    margin-right: 0px;
   }
 }
 
