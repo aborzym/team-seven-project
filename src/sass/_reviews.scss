@@ -44,7 +44,7 @@ z-index: 0;
 }
 .svg::before
 {
-          content: url('../images/quote.svg');
+          content: url('../images/reviews/quote.svg');
           background-size: 40px 54px;
          position: absolute;
          padding-left: 40px;
@@ -60,7 +60,7 @@ z-index: 0;
   }
 
   .svg::after{
-    content: url('../images/suspointspnk.svg');
+    content: url('../images/reviews/suspointspnk.svg');
       padding-left: 108px;
       padding-top: 45px;
       position: absolute;
@@ -140,7 +140,7 @@ font-weight: 500;
 
 .swiper-pagination-bullet-active 
 {
-   background-image: url('../images/home.svg') !important;
+   background-image: url('../images/reviews/home.svg') !important;
    background-color: transparent;
    width: 12.4px;
    height: 12px;
