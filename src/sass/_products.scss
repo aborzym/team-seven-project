@@ -12,7 +12,7 @@
   }
 
   &__title {
-    font-family: "Titan one";
+    font-family: 'Titan one';
     font-weight: 400;
     font-size: 34px;
     line-height: 1.15;
@@ -33,7 +33,7 @@
     }
   }
   &__upper--title {
-    font-family: "Titan One";
+    font-family: 'Titan One';
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
@@ -86,7 +86,7 @@
   &__description {
     display: flex;
     flex-direction: column;
-    font-family: "DM sans";
+    font-family: 'DM sans';
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
@@ -111,7 +111,7 @@
       flex-direction: column;
       padding-left: 20px;
       padding-right: 20px;
-      font-family: "DM sans";
+      font-family: 'DM sans';
       font-weight: 700;
       font-size: 14px;
       line-height: 152%;
@@ -146,7 +146,7 @@
       gap: 30px;
     }
     &--title {
-      font-family: "Titan one";
+      font-family: 'Titan one';
       font-weight: 400;
       font-size: 20px;
       line-height: 23px;
@@ -163,6 +163,8 @@
       }
     }
     &--icecream {
+      position: relative;
+
       background-color: $lightpink;
       border-radius: 24px;
       width: 280px;
@@ -175,7 +177,7 @@
       &::before {
         content: url(../images/products/m_icestrawberry@1x.png);
         position: absolute;
-        top: 300;
+        top: -115px;
       }
 
       @media screen and (min-width: $tablet) {
@@ -184,7 +186,7 @@
         &::before {
           content: url(../images/products/t_icestrawberry@1x.png);
           position: absolute;
-          top: 350px;
+          top: -100px;
         }
       }
       @media screen and (min-width: $desktop) {
@@ -193,11 +195,12 @@
         &::before {
           content: url(../images/products/d_icestrawberry@1x.png);
           position: absolute;
-          top: 380px;
+          top: -205px;
         }
       }
     }
     &--icecoffe {
+      position: relative;
       background-color: $beige;
       border-radius: 24px;
       width: 280px;
@@ -210,7 +213,7 @@
       &::before {
         content: url(../images/products/m_icecoffe@1x.png);
         position: absolute;
-        top: 955px;
+        top: -115px;
       }
 
       @media screen and (min-width: $tablet) {
@@ -218,7 +221,7 @@
         &::before {
           content: url(../images/products/t_icecoffe@1x.png);
           position: absolute;
-          top: 350px;
+          top: -100px;
         }
       }
       @media screen and (min-width: $desktop) {
@@ -227,11 +230,13 @@
         &::before {
           content: url(../images/products/d_icecoffe@1x.png);
           position: absolute;
-          top: 380px;
+          top: -205px;
         }
       }
     }
     &--milkshakes {
+      position: relative;
+
       background-color: $mint;
       border-radius: 24px;
       width: 280px;
@@ -244,7 +249,7 @@
       &::before {
         content: url(../images/products/m_icemilk@1x.png);
         position: absolute;
-        top: 1600px;
+        top: -115px;
       }
 
       @media screen and (min-width: $tablet) {
@@ -252,7 +257,7 @@
         &::before {
           content: url(../images/products/t_icemilk@1x.png);
           position: absolute;
-          top: 350px;
+          top: -100px;
         }
       }
       @media screen and (min-width: $desktop) {
@@ -261,7 +266,7 @@
         &::before {
           content: url(../images/products/d_icemilk@1x.png);
           position: absolute;
-          top: 380px;
+          top: -205px;
         }
       }
     }
@@ -380,7 +385,7 @@
   padding-right: 20px;
 }
 .modal-title {
-  font-family: "Titan one";
+  font-family: 'Titan one';
   font-weight: 400;
   font-size: 24px;
   line-height: 23px;
@@ -390,7 +395,7 @@
   padding-bottom: 100px;
 }
 .modal-description {
-  font-family: "DM sans";
+  font-family: 'DM sans';
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
