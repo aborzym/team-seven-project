@@ -1,40 +1,124 @@
-<section class="hero-header">
-  <div class="container support">
-    <div class="hero-header__logo">
-      <picture>
-        <source
-          media="(min-width:320px)"
-          srcset="
-            ./images/header/logo1-s@1x.png 1x,
-            ./images/header/logo1-s@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img src="./images/header/logo1.png" alt="Logo ice cream z nazwą" />
-      </picture>
-    </div>
-    <div class="nav">
-      <ul class="nav__list">
-        <li><a class="nav__home" href="#">Home</a></li>
-        <li><a class="nav__about-us" href="#">About us</a></li>
-        <li><a class="nav__how-its-made" href="#">How it's made?</a></li>
-        <li><a class="nav__our-products" href="#">Our products</a></li>
-        <li><a class="nav__contacts" href="#">Contacts</a></li>
-      </ul>
-    </div>
-    <div class="buttons">
-      <div class="button">
-        <button class="buy-now" type="button">Buy now</button>
-        <svg class="buy-now__icon" width="4px" height="8px">
-          <use href="./images/icons.svg#icon-arrow1"></use>
-        </svg>
+<section class="header">
+  <div class="container">
+    <div class="container support">
+      <div class="hero-header__logo">
+        <picture>
+          <source
+            media="(min-width:320px)"
+            srcset="
+              ./images/header/logo1-s@1x.png 1x,
+              ./images/header/logo1-s@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img src="./images/header/logo1.png" alt="Logo ice cream z nazwą" />
+        </picture>
       </div>
+      <div class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__home" href="#">Home</a></li>
+          <li><a class="nav__about-us" href="#">About us</a></li>
+          <li><a class="nav__how-its-made" href="#">How it's made?</a></li>
+          <li><a class="nav__our-products" href="#">Our products</a></li>
+          <li><a class="nav__contacts" href="#">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <div class="button">
+          <button class="buy-now" type="button">Buy now</button>
+          <svg class="buy-now__icon" width="4px" height="8px">
+            <use href="./images/icons.svg#icon-arrow1"></use>
+          </svg>
+        </div>
 
-      <button class="mobile-menu-button" type="button" data-menu-open>
-        <svg class="mobile-menu-button__icon" width="20px" height="20px">
-          <use href="./images/icons.svg#icon-Burger"></use>
-        </svg>
-      </button>
+        <button
+          class="mobile-menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-button__icon" width="20px" height="20px">
+            <use href="./images/icons.svg#icon-Burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- moja sekcja --><!-- moja sekcja --><!-- moja sekcja --><!-- moja sekcja --><!-- moja sekcja -->
+
+    <h1 class="hero-header__title">
+      ice cream made with<span class="hero-header__passion">passion</span>
+    </h1>
+
+    <ul class="header__buttons">
+      <li>
+        <a href="#"
+          ><button class="header__buttons-products" type="button">
+            Products
+          </button></a
+        >
+      </li>
+      <li>
+        <a href="#"
+          ><button class="header__buttons-about" type="button">
+            How it's made?
+          </button></a
+        >
+      </li>
+    </ul>
+    <div class="header__elipse"></div>
+    <div class="header__ice"></div>
+    <!-- tablet desktop     --><!-- tablet desktop     --><!-- tablet desktop     --><!-- tablet desktop     -->
+
+    <div class="tablet">
+      <ul class="header__building">
+        <li class="header__numbers header__buildings-elipse">16</li>
+        <li class="header__cafes">cafes</li>
+        <li class="header__numbers header__buildings-elipse">23</li>
+        <li class="header__food">food trucks</li>
+      </ul>
+      <img
+        class="header__lady"
+        src="./images/header/t_lady@1x.png"
+        srcset="
+          ./images/header/t_lady@1x.png,
+          ./images/header/t_lady@2x.png,
+          ./images/header/d_lady@1x.png,
+          ./images/header/d_lady@2x.png
+        "
+        sizes="(min-width:$tablet)168px, (min-width:$desktop)293px"
+        alt="women eating icecream"
+      />
+
+      <img
+        class="header__milk"
+        src="./images/header/t_milk@1x.png"
+        srcset="
+          ./images/header/t_milk@1x.png,
+          ./images/header/t_milk@2x.png,
+          ./images/header/d_milk@1x.png,
+          ./images/header/d_milk@2x.png
+        "
+        sizes="(min-width:$tablet)124px"
+        alt="milk with writing bio eco"
+      />
+
+      <p class="header__milk-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+
+      <img
+        class="header__arrow"
+        src="./images/header/t_arrow@1x.png"
+        srcset="
+          ./images/header/t_arrow@1x.png,
+          ./images/header/t_arrow@2x.png,
+          ./images/header/d_arrow@1x.png,
+          ./images/header/d_arrow@2x.png
+        "
+        sizes="(min-width:$tablet)18px"
+        alt="white button with pink arrow"
+      />
     </div>
   </div>
 </section>
