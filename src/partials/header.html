@@ -27,7 +27,9 @@
       </div>
       <div class="buttons">
         <div class="button">
-          <button class="buy-now" type="button">Buy now</button>
+          <button class="buy-now js-open-modal" type="button" data-modal="1">
+            Buy now
+          </button>
           <svg class="buy-now__icon" width="4px" height="8px">
             <use href="./images/icons.svg#icon-arrow1"></use>
           </svg>
@@ -53,18 +55,14 @@
 
     <ul class="header__buttons">
       <li>
-        <a href="#"
-          ><button class="header__buttons-products" type="button">
+          <button class="header__buttons-products" onclick="location.href='#products'" type="button">
             Products
-          </button></a
-        >
+        
       </li>
       <li>
-        <a href="#"
-          ><button class="header__buttons-about" type="button">
+          <button class="header__buttons-about" onclick="location.href='#about'" type="button">
             How it's made?
-          </button></a
-        >
+          </button>
       </li>
     </ul>
     <div class="header__elipse"></div>
@@ -123,4 +121,24 @@
       />
     </div>
   </div>
+  <div class="modal" data-modal="1">
+    <button type="button" class="modal__close-btn js-modal-close">
+      <svg class="js-modal-close" viewBox="0 0 23 32">
+        <use
+          href="./images/icons.svg#icon-close_24px"
+          width="14"
+          height="14"
+        ></use>
+      </svg>
+    </button>
+    <div class="modal-container">
+      <h3 class="modal-title">We're very sorry</h3>
+      <p class="modal-description">
+        Due to the recent death of our sales manager, you cannot order anything
+        from us until further notice.
+      </p>
+      <p class="modal-description">We apologize for the inconvenience.</p>
+    </div>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
 </section>

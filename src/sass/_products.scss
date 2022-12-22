@@ -384,6 +384,12 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.modal-container-scnd {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .modal-title {
   font-family: 'Titan one';
   font-weight: 400;
@@ -393,6 +399,17 @@
   letter-spacing: 0.04em;
   color: $darkpink;
   padding-bottom: 100px;
+}
+
+.modal-title-scnd {
+  font-family: 'Titan one';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $darkpink;
+  padding-bottom: 40px;
 }
 .modal-description {
   font-family: 'DM sans';
@@ -404,4 +421,5 @@
   color: $black;
   padding-left: 40px;
   padding-right: 40px;
+  margin-bottom: 1em;
 }
