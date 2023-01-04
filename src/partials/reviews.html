@@ -2,103 +2,121 @@
 <section class="customer-reviews">
     <div class="swiper container">
         
-        <!-- SWIPER-WRAPPER -->
-            <div class="swiper-wrapper">
+    
+        <!-- REVIWS_SWIPER-WRAPPER -->
+        <div class="swiper-wrapper">
             
-                <!-- SLIDE -->
+
+            <!-- SLIDE_NR.1 -->
             <div class="swiper-slide">
-                <ul class="cards list">
+                <ul class="slide__list">   
+        
                     
-                    <!-- AVATAR-CUSTOMER -->
-                    <li class="card__item">
-                        <img class="review__customer-avatar" src="./images/reviews/customer@1x.png"
-                            alt="avatar-customer" /></li>
-                            
-                            <!-- CONTENT-REVIEW -->
-                    <li class="card__item">
-                        <div class="review__content-box svg">
-                            <p class="text ">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                    <!-- CUSTOMER-AVATAR -->
+                    <li class="slide__item">
+                        <img class="customer-avatar" src="./images/reviews/customer@1x.png"
+                        alt="customer-avatar" />
+                    </li>
+                    
+                    
+                    <!-- CUSTOMER-REVIEW -->
+                    <li class="slide__item">
+                        <div class="review icons-review">
+                            <p class="review-content">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                            </p>
+                        </div>
+                    </li>
+
+
+                    <!-- CUSTOMER-INFORMATION -->
+                    <li class="slide__item">
+                        <h2 class="customer-info">Emily, Los Angeles</h2>
+                    </li>
+                </ul>
+            </div>
+                        
+            <!-- SLIDE_NR.2 -->
+            <div class="swiper-slide">
+                <ul class="slide__list">
+                               
+                    
+                    <!-- CUSTOMER-AVATAR -->
+                    <li class="slide__item">
+                        <img class="customer-avatar" src="./images/reviews/customer2@1x.png"
+                                        alt="customer-avatar" />
+                    </li>
+                                
+                    
+                    <!-- CUSTOMER-REVIEW -->
+                    <li class="slide__item ">
+                        <div class="review icons-review">
+                            <p class="review-content">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+                                sem. In
                                 hendrerit nulla quam nunc, accumsan
                                 congue. Lorem ipsum primis in nibh vel risus.
                             </p>
                         </div>
                     </li>
+                                
 
-                    <!-- ID-CUSTOMERS -->
-                    <li class="card__item">
-                        <h2 class="review__customer-orgin">Emily, Los Angeles</h2>
+                    <!-- CUSTOMER-INFORMATION -->
+                    <li class="slide__item">
+                        <h2 class="customer-info">Emily, Los Angeles</h2>
                     </li>
                 </ul>
             </div>
             
-            <!-- SLIDE -->
-            <div class="swiper-slide">
-                <ul class="cards list">
-                    
-                    <!-- AVATAR-CUSTOMER -->
-                    <li class="card__item">
-                        <img class="review__customer-avatar" src="./images/reviews/customer2@1x.png"
-                            alt="avatar-customer" />
-                    </li>
-                    <!-- CONTENT-REVIEW -->
-                    <li class="card__item ">
-                        <div class="review__content-box svg">
-                            <p class="text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-                                    sem. In
-                                    hendrerit nulla quam nunc, accumsan
-                                    congue. Lorem ipsum primis in nibh vel risus.</p>
-                        </div>
-                    </li>
-                    
-                    <!-- ID-CUSTOMERS -->
-                    <li class="card__item">
-                        <h2 class="review__customer-orgin">Emily, Los Angeles</h2>
-                    </li>
-                </ul>
-            </div>
             
+            <!-- SLIDE_NR.3 -->
             <div class="swiper-slide">
-                <ul class="cards list">
-                    <li class="card__item">
-                        <img class="review__customer-avatar" src="./images/reviews/customer3@1x.png"
-                            alt="avatar-customer" />
+                <ul class="slide__list">
+                    
+                    
+                    <!-- CUSTOMER-AVATAR -->
+                    <li class="slide__item">
+                        <img class="customer-avatar" src="./images/reviews/customer3@1x.png"
+                                    alt="customer-avatar" />
                     </li>
-                <li class="card__item">
-                    <div class="review__content-box svg">
-                
-                        <p class="text"><span class="underline">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+                    
+                    
+                    <!-- CUSTOMER-REVIEW -->
+                    <li class="slide__item">
+                        <div class="review icons-review">
+                            <p class="review-content">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
                                 sem. In
                                 hendrerit nulla quam nunc, accumsan
-                                congue. Lorem ipsum primis in nibh vel risus.</span>
-                        </p>
-                    </div>
-                </li>
+                                congue. Lorem ipsum primis in nibh vel risus.
+                            </p>
+                        </div>
+                    </li>
+                            
                     
-                  
-                    <li class="card__item">
-                        <h2 class="review__customer-orgin">Emily, Los Angeles</h2>
+                    <!-- CUSTOMER-INFORMATION -->
+                    <li class="slide__item">
+                        <h2 class="customer-info">Emily, Los Angeles</h2>
                     </li>
                 </ul>
             </div>
         </div>
         
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
+        
+        <!-- PAGINATION -->
+        <div class="swiper-pagination">   
+        </div>
     </div>
-   
 </section>
-<!-- Swiper-script-->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        
 
+<!-- Swiper-script_HTML-JS-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+</script>
 <script>
     const swiper = new Swiper('.swiper', {
         loop: true,
-
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-
+        el: '.swiper-pagination',
+        clickable: true,
         },
     });
 </script>
